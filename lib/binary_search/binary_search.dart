@@ -7,9 +7,9 @@ int? binarySearch({required List<num> array, required num value}) {
     if (array[mid] == value) {
       return mid;
     } else if (value > array[mid]) {
-      startIndex = mid;
+      startIndex = mid + 1;
     } else {
-      endIndex = mid;
+      endIndex = mid - 1;
     }
   }
 }
